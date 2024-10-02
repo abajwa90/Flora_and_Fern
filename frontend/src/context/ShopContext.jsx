@@ -5,6 +5,10 @@ import axios from 'axios'
 
 export const ShopContext = createContext();
 
+// src/context/ShopContext.jsx
+// const backendUrl = import.meta.env.VITE_BACKEND_URL;
+// console.log('Backend URL:', backendUrl); // Temporary: Remove after verification
+
 const ShopContextProvider = (props) => {
 
     const currency = '$';

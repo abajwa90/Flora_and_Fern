@@ -22,15 +22,15 @@ const App = () => {
       <Navbar />
       <SearchBar />
       <Routes>
-        <Route path='https://flora-and-fern.vercel.app/' element={<Home />} />
-        <Route path='https://flora-and-fern.vercel.app/collection' element={<Collection />} />
-        <Route path='https://flora-and-fern.vercel.app/contact' element={<Contact />} />
-        <Route path='https://flora-and-fern.vercel.app/product/:productId' element={<Product />} />
-        <Route path='https://flora-and-fern.vercel.app/cart' element={<Cart />} />
-        <Route path='https://flora-and-fern.vercel.app/login' element={<Login />} />
-        <Route path='https://flora-and-fern.vercel.app/place-order' element={<PlaceOrder />} />
-        <Route path='https://flora-and-fern.vercel.app/orders' element={<Orders />} />
-        <Route path='https://flora-and-fern.vercel.app/verify' element={<Verify />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/collection' element={<Collection />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/product/:productId' element={<Product />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/place-order' element={<PlaceOrder />} />
+        <Route path='/orders' element={<Orders />} />
+        <Route path='/verify' element={<Verify />} />
       </Routes>
       <Footer />
     </div>
