@@ -18,12 +18,11 @@ connectDB();
 app.use(express.json())
 
 //CORS config
-const corsOptions = {
-    origin: 'https://flora-and-fern-client-n0n4ot2nn-abajwa90s-projects.vercel.app', // Replace with your frontend's actual domain
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true, // If you need to send cookies or authentication headers
-  };
-app.use(cors(corsOptions));
+const allowedOrigins = ['https://flora-and-fern.vercel.app']; // Replace with your frontend's actual domain
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true,
+}));
 
 // api endpoints
 app.use('/api/user',userRouter);
