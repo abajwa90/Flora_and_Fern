@@ -2,16 +2,16 @@ import express from 'express'
 import cors from 'cors'
 import 'dotenv/config'
 import connectDB from './config/mongodb.js'
-import userRouter from '../backend/routes/userRoute.js'
-import productRouter from '../backend/routes/productRoute.js'
-import cartRouter from '../backend/routes/cartRoute.js'
-import orderRouter from '../backend/routes/orderRoute.js'
+import userRouter from '../backend/api/routes/userRoute.js'
+import productRouter from '../backend/api/routes/productRoute.js'
+import cartRouter from '../backend/api/routes/cartRoute.js'
+import orderRouter from '../backend/api/routes/orderRoute.js'
 
 
 // App Config
 const app = express()
 const port = process.env.PORT || 4000
-connectDB()
+connectDB() 
 
 
 // middlewares
